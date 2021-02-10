@@ -5,9 +5,9 @@ import "./Style/Projects.css";
 function Projects() {
   return (
     <div className="Projects">
-      <h1>
+      <div className="title">
         Projects <FaCode />
-      </h1>
+      </div>
       <ProjectDiv />
     </div>
   );
@@ -20,28 +20,28 @@ function ProjectDiv() {
     {
       id: 0,
       name: "Portfolio",
-      area: "Front-End Developer",
+      area: "Frontend Development",
       technologies: [{ tech: "ReactJs" }, { tech: "CSS3" }],
       link: "https://github.com/tiagojosejesus/PersonalPortfolio",
     },
     {
       id: 1,
       name: "Weather App",
-      area: "Front-End Developer",
+      area: "Frontend Development",
       technologies: [{ tech: "ReactJs" }, { tech: "CSS3" }],
       link: "https://github.com/tiagojosejesus/WeatherApp",
     },
     {
       id: 2,
       name: "Expenses Tracker",
-      area: "Front-End Developer",
+      area: "Frontend Development",
       technologies: [{ tech: "ReactJs" }, { tech: "CSS3" }],
       link: "https://github.com/tiagojosejesus/expensesTracker",
     },
     {
       id: 3,
       name: "Chat With Firebase",
-      area: "Front-End Developer",
+      area: "Frontend Development",
       technologies: [
         { tech: "ReactJs" },
         { tech: "CSS3" },
@@ -52,7 +52,7 @@ function ProjectDiv() {
     {
       id: 4,
       name: "ToDo List",
-      area: "Front-End Developer",
+      area: "Frontend Development",
       technologies: [{ tech: "ReactJs" }, { tech: "CSS3" }],
       link: "https://github.com/tiagojosejesus/todolist",
     },
@@ -63,15 +63,18 @@ function ProjectDiv() {
       {projects.map((info) => {
         return (
           <div key={info.id} className="projectsInfo">
-            <h3>{info.name}</h3>
-            <h4>{info.area}</h4>
+            <div className="projectsTitle">{info.name}</div>
+            <div className="projectsType">{info.area}</div>
             {info.technologies.map((tech) => {
               return (
-                <div>
-                  <div>{tech.tech}</div>
+                <div className="projectTech-items">
+                  <div className="projectTech-item">{tech.tech}</div>
                 </div>
               );
             })}
+            <div className="projectLink">
+              <a href={info.link}>See Project -&gt; </a>
+            </div>
           </div>
         );
       })}
