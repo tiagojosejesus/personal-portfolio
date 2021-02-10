@@ -5,7 +5,7 @@ import { MdComputer } from "react-icons/md";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Projects from "./Components/Projects";
-import Contact from "./Components/Contact";
+// import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
 
 function App() {
@@ -24,14 +24,14 @@ function App() {
           <div key="About" className="NavBar-link">
             <Link to="/About">About</Link>
           </div>
-          <div key="Contact" className="NavBar-link">
+          {/* <div key="Contact" className="NavBar-link">
             <Link to="/Contacts">Contacts</Link>
-          </div>
+          </div> */}
         </div>
         <Switch>
           <Route path="/Projects" component={Projects} />
           <Route path="/About" component={About} />
-          <Route path="/Contacts" component={Contact} />
+          {/* <Route path="/Contacts" component={Contact} /> */}
           <Route path="/" component={Home} />
         </Switch>
       </Router>
