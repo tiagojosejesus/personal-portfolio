@@ -1,19 +1,17 @@
 import React from "react";
 import "./Style/Home.css";
+import Highlight from "./Highlight";
 
 function Home() {
   return (
     <div className="Home">
-      <div className="title">
-        <h2>Hello</h2>
-      </div>
+      <div className="title">Hello</div>
       <div className="textContainer">
-        <p className="textDisplay">
-          My name is <HighLight text="Tiago Jesus" /> and this is my
-          <HighLight text="Portfolio" />.
+        <p>
+          I'm <Highlight text="Tiago Jesus" /> and this is my Portfolio.
         </p>
-        <p className="textDisplay">
-          I'm a <HighLight text="Junior Front-End Developer" />
+        <p>
+          I'm a <Highlight text="Frontend Developer" />.
         </p>
       </div>
     </div>
@@ -21,7 +19,3 @@ function Home() {
 }
 
 export default Home;
-
-function HighLight({ text }) {
-  return <span className="highlight">{text}</span>;
-}
