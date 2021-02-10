@@ -1,0 +1,82 @@
+.Projects {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  color: white;
+  text-align: justify;
+  margin-top: 100px;
+  margin-left: 25%;
+  width: 50%;
+  margin-right: 25%;
+  margin-bottom: 3%;
+}
+
+.projectsInfo {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  border-color: #61dafb;
+  border-style: solid;
+  border-width: 2px;
+  padding: 10px;
+  background-color: #282c34;
+  color: #61dafb;
+  width: 100%;
+}
+
+.projectsTitle {
+  font-size: 30px;
+  font-family: "Apple Chancery", cursive;
+  text-align: center;
+  background-color: inherit;
+  font-weight: bold;
+  width: 100%;
+}
+
+.projectsType {
+  font-size: 20px;
+  text-align: start;
+  padding: 10px;
+  background-color: inherit;
+  color: white;
+  width: 100%;
+}
+
+.projectTech-items {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  border-style: solid;
+  border-radius: 20%;
+  border-color: #61dafb;
+  width: max-content;
+  height: max-content;
+}
+
+.projectTech-item {
+  background-color: #61dafb;
+  color: black;
+  font-size: 20px;
+}
+
+.projectLink {
+  padding: 10px;
+  background-color: inherit;
+  color: white;
+  font-size: 20px;
+  width: 100%;
+}
+
+.projectLink a {
+  text-decoration: none;
+  background-color: inherit;
+  color: inherit;
+}
+.projectLink a:visited {
+  text-decoration: none;
+  background-color: inherit;
+  color: inherit;
+}
+.projectLink a:hover {
+  color: #61dafb;
+}

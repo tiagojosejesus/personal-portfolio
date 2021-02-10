@@ -1,0 +1,30 @@
+.footer {
+  position: fixed;
+  left: 0%;
+  bottom: 0%;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.footerInfo {
+  display: inline-block;
+  position: relative;
+  font-size: 30px;
+  padding-right: 20px;
+}
+
+.footerInfo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footerInfo a:hover {
+  text-decoration: none;
+  color: #61dafb;
+}
+
+.footer a:active {
+  text-decoration: none;
+  color: inherit;
+}
