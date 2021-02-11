@@ -4,6 +4,10 @@ body {
   background-color: #20232a;
   font-family: "Roboto Mono", monospace;
 }
+.App {
+  position: relative;
+  min-height: 100vh;
+}
 .NavBar {
   display: flex;
   justify-content: space-evenly;
