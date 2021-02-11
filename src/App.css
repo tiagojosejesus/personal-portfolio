@@ -1,24 +1,22 @@
-* {
+body {
+  margin: 0;
+  padding: 0;
   background-color: #20232a;
-  margin: 0px;
-  padding: 0px;
+  font-family: "Roboto Mono", monospace;
 }
 .NavBar {
-  display: block;
+  display: flex;
+  justify-content: space-evenly;
   background-color: #282c34;
-  position: absolute;
   text-align: right;
-  align-items: center;
   color: white;
   width: 100%;
-  height: inherit;
+  height: 50px;
+  align-items: center;
 }
 .NavBar-link {
-  display: inline-block;
   cursor: pointer;
-  margin-top: 20px;
-  font-size: 25px;
-  padding-right: 15px;
+  font-size: 16px;
   background-color: inherit;
 }
 
@@ -44,12 +42,12 @@
   text-decoration: none;
 }
 
-.NavBar-link_Home {
+/* .NavBar-link_Home {
   float: left;
-  font-size: 40px;
+  font-size: 27px;
   padding-left: 3%;
-  margin-top: 20px;
-  background-color: #282c34;
+  margin: 20px auto;
+  background-color: inherit;
 }
 
 .NavBar-link_Home a {
@@ -67,4 +65,22 @@
   text-decoration: none;
   color: #61dafb;
   background-color: #282c34;
+} */
+
+@media (min-width: 768px) {
+  .NavBar {
+    height: 80px;
+  }
+  .NavBar-link {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 992px) {
+  .NavBar {
+    justify-content: flex-end;
+  }
+  .NavBar-link {
+    margin-right: 64px;
+  }
 }

@@ -1,43 +1,43 @@
-.Projects {
+.content {
   display: flex;
-  flex-wrap: wrap;
-  position: absolute;
+  flex-direction: column;
   color: white;
-  text-align: justify;
-  margin-top: 100px;
-  margin-left: 25%;
-  width: 50%;
-  margin-right: 25%;
-  margin-bottom: 3%;
+  text-align: left;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
+  margin: 0 auto;
 }
 
 .projectsInfo {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 10px;
+  margin: 0 24px 24px;
   border-color: #61dafb;
   border-style: solid;
-  border-width: 2px;
-  padding: 10px;
+  border-width: 1px;
+  border-radius: 6px;
+  padding: 16px;
   background-color: #282c34;
   color: #61dafb;
-  width: 100%;
+  justify-content: center;
 }
 
 .projectsTitle {
-  font-size: 30px;
-  font-family: "Apple Chancery", cursive;
-  text-align: center;
-  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  font-size: 24px;
   font-weight: bold;
   width: 100%;
+  margin-bottom: 8px;
+  color: white;
+  font-family: "Roboto Mono", monospace;
 }
 
 .projectsType {
   font-size: 20px;
   text-align: start;
   padding: 10px;
-  background-color: inherit;
   color: white;
   width: 100%;
 }
@@ -45,38 +45,61 @@
 .projectTech-items {
   display: flex;
   flex-wrap: wrap;
-  margin-left: 20px;
-  border-style: solid;
-  border-radius: 20%;
-  border-color: #61dafb;
-  width: max-content;
-  height: max-content;
+  margin-bottom: 8px;
 }
 
 .projectTech-item {
   background-color: #61dafb;
+  border-radius: 6px;
   color: black;
-  font-size: 20px;
+  font-size: 16px;
+  padding: 6px;
+  margin: 0 8px;
 }
 
 .projectLink {
-  padding: 10px;
-  background-color: inherit;
+  display: flex;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   width: 100%;
+  justify-content: center;
 }
 
 .projectLink a {
-  text-decoration: none;
-  background-color: inherit;
+  text-decoration: underline;
+  text-decoration-color: #61dafb;
   color: inherit;
 }
 .projectLink a:visited {
-  text-decoration: none;
   background-color: inherit;
   color: inherit;
 }
 .projectLink a:hover {
   color: #61dafb;
+}
+
+@media (min-width: 576px) {
+  .content {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .content {
+    padding: 0;
+    max-width: 720px;
+  }
+  .projectsInfo {
+    width: 95%;
+    margin: 0 auto 24px;
+  }
+  .projectsTitle {
+    font-size: 32px;
+  }
+  .projectTech-item {
+    font-size: 24px;
+  }
+  .projectLink {
+    font-size: 24px;
+  }
 }

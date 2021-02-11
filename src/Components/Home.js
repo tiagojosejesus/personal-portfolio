@@ -4,16 +4,18 @@ import Highlight from "./Highlight";
 
 function Home() {
   return (
-    <div className="Home">
+    <div className="content">
       <div className="title">Hello</div>
-      <div className="textContainer">
-        <p>
-          I'm <Highlight text="Tiago Jesus" /> and this is my Portfolio.
-        </p>
-        <p>
-          I'm a <Highlight text="Frontend Developer" />.
-        </p>
-      </div>
+      <p className="paragraph">
+        I'm <Highlight text="Tiago Jesus" /> and this is my Portfolio.
+      </p>
+      <p className="paragraph">
+        I'm a <Highlight text="Frontend Developer" />.
+      </p>
+      <p className="paragraph">
+        Since I started learning <Highlight text="Frontend Development" />, I
+        took interest in <a href="https://reactjs.org">React</a>.
+      </p>
     </div>
   );
 }
