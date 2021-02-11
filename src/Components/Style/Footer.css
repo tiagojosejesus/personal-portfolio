@@ -1,12 +1,13 @@
 .footer {
   display: flex;
   justify-content: space-evenly;
-  position: absolute;
   width: 100%;
   color: white;
   height: 70px;
   align-items: center;
   background-color: #282c34;
+  position: absolute;
+  bottom: 0;
 }
 
 .footerInfo {
