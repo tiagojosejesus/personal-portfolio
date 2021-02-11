@@ -1,17 +1,18 @@
 .footer {
-  position: fixed;
-  left: 0%;
-  bottom: 0%;
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
   width: 100%;
   color: white;
-  text-align: center;
+  height: 70px;
+  align-items: center;
+  background-color: #282c34;
 }
 
 .footerInfo {
   display: inline-block;
   position: relative;
   font-size: 30px;
-  padding-right: 20px;
 }
 
 .footerInfo a {
@@ -27,4 +28,22 @@
 .footer a:active {
   text-decoration: none;
   color: inherit;
+}
+
+@media (min-width: 768px) {
+  .footer {
+    height: 80px;
+  }
+  .footerInfo {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer {
+    justify-content: center;
+  }
+  .footerInfo {
+    margin: 0 32px;
+  }
 }
