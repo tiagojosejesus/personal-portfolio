@@ -26,7 +26,7 @@ function ProjectDiv() {
       name: "Weather App",
       area: "Frontend Development",
       technologies: [{ tech: "React" }, { tech: "CSS3" }],
-      link: "https://github.com/tiagojosejesus/WeatherApp",
+      link: "https://github.com/tiagojosejesus/weather-tracker",
     },
     {
       id: 2,
