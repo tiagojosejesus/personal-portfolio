@@ -26,7 +26,7 @@ function ProjectDiv() {
       name: "Weather App",
       area: "Frontend Development",
       technologies: [{ tech: "React" }, { tech: "CSS3" }],
-      link: "https://github.com/tiagojosejesus/WeatherApp",
+      link: "https://github.com/tiagojosejesus/weather-tracker",
     },
     {
       id: 2,
@@ -40,14 +40,14 @@ function ProjectDiv() {
       name: "Chat With Firebase",
       area: "Frontend Development",
       technologies: [{ tech: "React" }, { tech: "CSS3" }, { tech: "Firebase" }],
-      link: "https://github.com/tiagojosejesus/ChatWithFirebase",
+      link: "https://github.com/tiagojosejesus/chat-with-firebase",
     },
     {
       id: 4,
       name: "ToDo List",
       area: "Frontend Development",
       technologies: [{ tech: "React" }, { tech: "CSS3" }],
-      link: "https://github.com/tiagojosejesus/todolist",
+      link: "https://github.com/tiagojosejesus/to-do-list",
     },
   ]);
 
