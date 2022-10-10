@@ -6,15 +6,34 @@
   margin: 100px auto;
   width: 100%;
 } */
-.title {
+
+.background{
+  position: absolute;
+  width: 100%;
+  height: 90vh; 
+  z-index: -10;
+  background-size: cover;
+  background-image: url('../../assets/images/homebackground.gif');
+}
+.homeInfo{
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: 48px;
   color: white;
   align-items: center;
   width: 100%;
+  height: 85vh;
   padding: 24px 0;
   font-family: "Work Sans", sans-serif;
+}
+.title {
+  line-height: 2;
+  font-size: 48px;
+}
+
+.title h2{
+  height: "80vh";
+  display: block;
 }
 
 .paragraph {
@@ -24,7 +43,6 @@
 }
 
 .paragraph a {
-  text-decoration: none;
   color: #61dafb;
   font-weight: 500;
 }
@@ -33,8 +51,8 @@
 }
 
 .paragraph a:hover {
-  background-color: white;
-  color: #20232a;
+  color: #61dafb;
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
